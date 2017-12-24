@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
+  margin-top: 10px;
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #333333;
@@ -29,10 +30,13 @@ h1.title {
   font-family: sans-serif;
   color: red
 }
-
 .site-heading{
-  margin-left: 320px;
-  margin-top: 50px;
+  margin-left: 360px;
+  margin-top: 30px;
+}
+
+.navbar-collapse {
+  margin-top: -50px;
 }
 a {
   color: #333333;
@@ -162,7 +166,8 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  height: 500px;
+  
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -286,7 +291,7 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 50px 0 65px;
+  padding: 20px 0 65px;
 }
 footer .list-inline {
   margin: 0;

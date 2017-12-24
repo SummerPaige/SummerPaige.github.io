@@ -15,6 +15,7 @@ p {
 p a {
   text-decoration: underline;
 }
+
 h1,
 h2,
 h3,
@@ -24,12 +25,21 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+h1.title {
+  font-family: sans-serif;
+  color: red
+}
+
+.site-heading{
+  margin-left: 320px;
+  margin-top: 50px;
+}
 a {
   color: #333333;
 }
 a:hover,
 a:focus {
-  color: #0085A1;
+  color:#00FFFF;
 }
 a img:hover,
 a img:focus {
@@ -40,7 +50,7 @@ blockquote {
   font-style: italic;
 }
 hr.small {
-  max-width: 100px;
+  max-width: 200px;
   margin: 15px auto;
   border-width: 4px;
   border-color: white;

@@ -1,0 +1,907 @@
+
+    body{
+        position:relative;
+        width:1600px;
+    	margin:0 auto;
+        background-color: #b3b0b0;
+    }
+    /*-------------------Header部分---------------*/
+     #header{
+        width:100%;
+    	height:990px;
+        margin:0px;
+        padding:0px;
+    	background:url(img/Background.png) no-repeat;
+     }
+     #header .title{
+        position:relative;
+        top:208px;
+        left:639px;
+     	color:#ffffff;
+     	font-size: 48px;
+        font-weight: lighter;
+        width:322px;
+        margin:0px;
+        padding:0px;
+     }
+     #header p.content{
+        position:absolute;
+        top:342px;
+        left:419px;
+     	width:766px;
+     	height:86px;
+     	color:#9e9d96;
+     	font-size: 20px;
+     	text-align: center;
+        margin:0px;
+        padding:0px;
+     }
+    #header .sign-up{
+        position:absolute;
+        top:530px;
+        left:315px;
+    	width:970px;
+    	height:250px;
+    	border:1px solid #61594f;
+        margin:0px;
+        padding:0px;
+    }
+    #header .sign-up-title{
+        font-size:18px;
+        color:#ffffff;
+        margin:0;
+        width:241px;
+        position:relative;
+        top:61px;
+        left:361px;
+    }
+    #header  .sign-up-content{
+        font-size:6px;
+        color:#615d4c;
+        margin:0;
+        width:170px;
+        position:absolute;
+        top:93px;
+        left:409px;
+    }
+    #header form{
+        position: absolute;
+        top:148px;
+        left:100px;
+
+    }
+    #header .sign-up-account {
+        width:292px;
+        height:50px;
+        margin-right:30px;
+        padding:0px;
+        border:1px solid #61594f;
+        background-color: transparent;
+    }
+
+    #header .sign-up-pass{
+        width:292px;
+        height:50px;
+        margin-right:30px;
+        border:1px solid #61594f;
+        background-color: transparent;
+    }
+
+    #header .sign-up-sub{
+        width:125px;
+        height:50px;
+        border:1px solid #61594f;
+        background-color:#ffffff; 
+    }
+    #header .sign-up input::-webkit-input-placeholder{text-align: center;}
+/*-------------------part1部分---------------------------*/
+    #parts{
+        width:1600px;
+        margin:0;  
+    }
+
+    #parts .part1{
+        position: relative;
+        width:1027px;
+        height:506px;
+        padding:89px 296px 115px 277px;
+        background-color:#ffffff;
+        
+       }
+       
+       #parts .part1 .title{
+        width:675px;
+        height:143px;
+        position:relative;
+        left:181px;
+       }
+
+      #parts .part1 .title .ti1{
+        font-size: 10px;
+        text-align: center;
+        color:#141414;
+      }
+
+      #parts .part1 .title .ti2{
+        font-size: 42px;
+        font-weight: lighter;
+        text-align: center;
+        color:#141414;
+      }
+ 
+ /*-----------------4个logo--------------------------*/
+
+    #parts .logo{
+        display:flex;
+        flex-wrap: wrap;
+        width:1033px;
+        height:279px;
+        position: absolute;
+        top:319px;
+    }
+
+     #parts .logo dl{
+        flex-grow: 0;
+        flex-shrink: 0;
+
+
+     }
+     
+     /*-------------iphone-------------*/
+     #parts .logo .iphone{
+        position: relative;
+        width:430px;
+        height:85px;
+        padding-left: 15px;
+        margin:0px;
+        padding-bottom: 80px; 
+        padding-right:179px;
+     }
+
+       #parts .logo .iphone dt{
+        display:inline-block;
+        position: relative;
+        bottom:20px;
+        width:30px;
+        height:49px;
+
+       }
+     #parts .logo .iphone dd{
+        display:inline-block;
+        width:355px;
+        height:85px;
+        margin:0px;
+        padding-left:30px;
+
+
+
+     }
+     #parts .logo .iphone dd h4 {
+        font-size: 16px;
+        color:black;
+        width:109px;
+        text-align: center;
+        position:355px;
+        margin:0px;
+        padding-bottom:23px;
+        
+     }
+
+    #parts .logo .iphone dd p {
+        margin:0;
+        font-size: 12px;
+        color:black;
+        width:355px;
+      
+    }
+/*-------------------check-----------------------*/    
+    #parts .logo .check{
+        width:394px;
+        height:85px;
+        margin:0px;
+        padding-bottom: 80px; 
+    }
+
+    #parts .logo .check dt{
+        display:inline-block;
+        width:40px;
+        height:37px;
+        position: relative;
+        bottom:38px;
+    }
+
+	#parts .logo .check dd{
+        display:inline-block;
+        margin:0px;
+        width:302px;
+        height:84px;
+        padding-left:25px;
+
+    }
+
+    #parts .logo .check dd h4 {
+        font-size: 16px;
+        color:black;
+        width:117px;
+        height:20px;
+        text-align: center;
+        margin:0;
+        padding-bottom:25px;
+
+    }
+
+
+    #parts .logo .check dd p {
+        margin:0;
+        font-size: 12px;
+        color:black;
+        width:327px;
+        height:39px;
+    }
+
+    /*-------------------pencil-----------------------*/    
+    #parts .logo .pencil{
+        width:423px;
+        height:89px;
+        margin:0px;
+        padding-right: 179px;
+    }
+
+    #parts .logo .pencil dt{
+        display:inline-block;
+        width:49px;
+        height:49px;
+        position:relative;
+        bottom: 40px;
+        
+    }
+
+    #parts .logo .pencil dd{
+        display:inline-block;
+        margin:0px;
+        width:321px;
+        height:89px;
+        padding-left: 27px;
+        
+
+    }
+
+    #parts .logo .pencil dd h4 {
+        font-size: 16px;
+        color:black;
+        width:164px;
+        height:20px;
+        text-align: center;
+        margin:0;
+        padding-bottom:25px;
+
+    }
+
+
+    #parts .logo .pencil dd p {
+        margin:0;
+        font-size: 12px;
+        color:black;
+        width:348px;
+        height:42px;
+    }
+     /*-------------------setting-----------------------*/    
+    #parts .logo .setting{
+        width:425px;
+        height:112px;
+        margin:0px;
+    }
+
+    #parts .logo .setting dt{
+        display:inline-block;
+        width:50px;
+        height:42px;
+        position:relative;
+        bottom:60px;
+        
+    }
+
+    #parts .logo .setting dd{
+        display:inline-block;
+        margin:0px;
+        width:327px;
+        height:112px;
+        padding-left: 24px;
+        
+
+    }
+
+    #parts .logo .setting dd h4 {
+        font-size: 16px;
+        color:black;
+        width:137px;
+        height:16px;
+        text-align: center;
+        margin:0;
+        padding-bottom:25px;
+
+    }
+
+
+    #parts .logo .setting dd p {
+        margin:0;
+        font-size: 12px;
+        color:black;
+        width:351px;
+        height:68px;
+    }
+    /*-----------------part2---------------------*/
+     #parts .part2 {
+        
+        width:1284px;
+        height:600px;
+        margin:0;
+        background-image: -webkit-cross-fade(url(img/botmBackground.png), url(img/topBackground.png), 65%);
+        padding:104px 0px 96px 316px;
+    }
+
+    /*-----------------content---------------------*/
+     #parts .part2 .content{
+        float:left;
+        width:505px;
+        height:432px;
+        position:relative;
+        top:80px;
+
+
+     }
+     #parts .part2 .content h2{
+        width:366px;
+        height:137px;
+        font-size:36px;
+        color:white;
+        margin:0;
+        margin-bottom:47px; 
+
+     }
+     #parts .part2 .content p{
+        width:366px;
+        height:130px;
+        font-size:20px;
+        color:white;
+        margin:0;
+        margin-bottom:58px; 
+
+     }
+     #parts .part2 .content form{
+        width:505px;
+        height:60px;
+     }
+     #parts .part2 .content form .btn1{
+        box-sizing:content-box;
+        width:226px;
+        height:58px;
+        padding: 1px 6px ;
+        border:1px;
+        margin-right:13px;
+        border:1px solid white;
+        background-color: white; 
+
+     }
+      #parts .part2 .content form .btn2{
+        box-sizing:content-box;
+        width:231px;
+        height:58px;
+        border:1px solid white;
+        padding: 1px 6px ;
+        background-color: transparent; 
+
+     }
+      #parts .part2 .content form .btn1 a{
+        text-decoration: none;
+        color:black;
+      } 
+      #parts .part2 .content form .btn2 a{
+        text-decoration: none;                   
+        color:white;
+      } 
+
+/*-----------------picture---------------------*/
+     #parts .part2 .picture{
+        float:right;
+        width:585px;
+        height:540px;
+        border:1px solid  white;
+        border-radius: 50px 0 0 50px;
+        padding:30px 0px 28px 60px;
+
+     }
+
+     #parts .part2 .picture .inner{
+        position: relative;
+        width:585px;
+        height:542px;
+        background-color: white;
+        
+     }
+
+     #parts .part2 .picture  .inner h2{
+        width:52px;
+        height:30px;
+        font-size: 20px;
+        color:black;
+        margin:0;
+        position:relative;
+        top:71px;
+        left:421px;
+
+     }
+     #parts .part2 .picture .inner .tip{
+
+        font-size: 12px;
+        color:#9c9c9c;
+        margin:0;
+        position:relative;
+        top:90px;
+        left:210px;
+     }
+
+     /*------------------logo------------*/
+     #parts .part2 .picture .inner .icon{
+       position:absolute;
+        top:203px;
+        left:57px;
+        
+     }
+  /*------------------hat------------*/
+     
+     #parts .part2 .picture .inner .icon .hat{
+       float:right;
+        width:178px;
+        height:248px;
+        margin:0;
+        background-color: white;
+   }
+     #parts .part2 .picture .inner .icon .hat dt{
+        width:178px;
+        height:137px;
+
+     }
+    #parts .part2 .picture .inner .icon .hat dd{
+        width:178px;
+        height:111px;
+        margin:0;
+    
+    }
+
+    #parts .part2 .picture .inner .icon .hat dd h3{
+        margin:0;
+        font-size: 12px;
+        color:black;
+        padding:12px 0px 12px 0px;
+
+    }
+    #parts .part2 .picture .inner .icon .hat dd p{
+        margin:0;
+        font-size: 4px;
+        color:#c7d2d7;
+        
+    }
+
+
+
+/*------------------compass------------*/
+
+    #parts .part2 .picture .inner .icon  .compass{
+        float:right;
+        width:178px;
+        height:248px;
+        margin:0;
+        margin-left:24px;
+        background-color: white;
+   }
+     #parts .part2 .picture .inner .icon  .compass dt{
+        width:178px;
+        height:137px;
+
+     }
+    #parts .part2 .picture .inner .icon  .compass dd{
+        width:178px;
+        height:111px;
+        margin:0;
+    
+    }
+
+    #parts .part2 .picture .inner .icon  .compass dd h3{
+        margin:0;
+        font-size: 12px;
+        padding:12px 0px 12px 0px;
+        color:black;
+
+    }
+    #parts .part2 .picture .inner .icon  .compass dd p{
+        margin:0;
+        font-size: 6px;
+        color:#c7d2d7;
+        
+    }
+
+   
+   /*------------------diamond------------*/
+
+    #parts .part2 .picture .inner .icon  .diamond{
+         float:right;
+        width:122px;
+        height:248px;
+        margin:0;
+        margin-left:24px;
+        background-color: white;
+   }
+     #parts .part2 .picture .inner .icon  .diamond dt{
+        width:122px;
+        height:137px;
+
+     }
+    #parts .part2 .picture .inner .icon  .diamond dd{
+        width:122px;
+        height:111px;
+        margin:0;
+    
+    }
+
+    #parts .part2 .picture .inner .icon  .diamond dd h3{
+        margin:0;
+        font-size: 12px;
+        color:black;
+        padding:12px 0px 12px 0px;
+
+    }
+    #parts .part2 .picture .inner .icon .diamond dd p{
+        margin:0;
+        font-size: 6px;
+        color:#c7d2d7;
+        
+    } 
+/*----------------------------------part3-------------------------*/
+
+.part3{
+    width:972px;
+    height:506px;
+    padding:92px 314px 76px 314px ;
+    margin:0 auto ;
+    background-color: white;
+}
+.part3 h2{
+    margin:0;
+    text-align: center;
+    font-size: 32px;
+    height:125px;
+
+}
+.part3 dl{
+    display:inline-block;
+    margin:0;
+    width:272px;
+    height:281px;
+    text-align: center;
+    margin-right: 72px;
+
+}
+.part3  .text3{
+margin-right: 0;
+}
+
+
+.part3 dl dt{
+    height:42px;
+
+}
+
+.part3 dl dd{
+    margin:0;
+    padding-top:35px;
+    color:#acacac;
+    font-size:20px;
+
+}
+
+/*----------------------------------part4------------------------*/
+.part4{
+   width:calc(100% - 620px);
+   height:781px; 
+   margin:0 auto;
+   background-color: white;
+   border:1px solid #e7e7e7 ;
+   padding:114px 314px 105px 306px;
+}
+
+.part4   .leaves{
+    width:571px;
+    height:350px;
+    float:left;
+    margin-right: 100px;
+   
+
+}
+.part4 .content1{
+    width:100%;
+    height:240px;
+    padding: 76px 0 34px 0;
+    margin-bottom:82px;
+}
+.part4  .content1 .title1 {
+    margin:0;
+    margin-bottom:34px; 
+    font-size: 16px;
+    color:black;
+}
+.part4  .content1 .text1 {
+    margin:0;
+    font-size: 10px;
+    color:#646464;
+}
+
+/*----------------------------------bird------------------------*/
+.part4   .bird{
+    width:571px;
+    height:350px;
+    float:right;
+    margin-left: 77px;
+
+}
+
+.part4 .content2{
+    width:100%;
+    height:338px;
+    padding: 71px 0 41px 0;
+    
+}
+.part4  .content2 .title2 {
+    margin:0;
+    margin-bottom:34px; 
+    font-size: 16px;
+    color:black;
+}
+.part4  .content2 .text2 {
+    margin:0;
+    font-size: 10px;
+    color:#646464;
+}
+
+/*----------------------------------part5------------------------*/
+
+.part5{
+    width:calc(100% - 630px);
+    height:980px;
+    padding:0 315px 102px 315px;
+    background-color: white;
+    margin:0 auto;
+    border:1px solid #e7e7e7;
+    border-top:none;
+}
+
+.part5 .title dl{
+    margin:0 ;
+    height:176px;
+    padding-top:97px;
+
+}
+
+.part5 .title dl dt{
+    font-size:36px;
+    text-align: center;
+    color:#141414;
+}
+.part5 .title dl dd{
+    margin:31px 0 62px 0;
+    font-size:16px;
+    text-align: center;
+    color:#acacac;
+}
+
+.part5 .picture{
+    position: relative;
+    width:470px;
+    height:341px;
+    display:inline-block;
+
+}
+.part5 .Userpic1,.part5 .Userpic3{
+    margin-right: 24px;
+    margin-bottom: 30px;
+}
+.part5 .Userpic1,.part5 .Userpic2{
+    margin-bottom: 30px;
+}
+
+.part5 .Userpic1 .bng{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.65;
+}
+
+.part5 .Userpic1 .context{
+    width:187px;
+    height:47px;
+    position:absolute;
+    top:109px;
+    left:142px;
+}
+.part5 .Userpic1 .context h3{
+
+margin:0;
+text-align: center;
+font-size: 16px;
+color:#ffffff;
+ }
+
+ .part5 .Userpic1 .context p{
+margin:0;
+text-align: center;
+font-size: 12px;
+color:#a3a3a3;
+}
+ 
+
+.part5 .Userpic1 .icon{
+    position:absolute;
+    top:194px;
+    left:129px;
+}
+
+/*----------------------------------part6------------------------*/
+.part6{
+    width:calc(100% - 630px);
+    height:557px;
+    background-color: white;
+    margin:0 auto;
+    padding:72px 314px 70px 314px ;
+    border:1px solid  #e7e7e7 ;
+    border-top:none;
+}
+.part6 .form{
+    display:inline-block;
+    width:369px;
+    height:438px;
+    border:1px solid #e7e7e7;
+    border-radius: 2px;
+    padding:50px 50px 69px 50px ;
+}
+.part6 .form h3{
+    font-size:16px;
+    font-weight: lighter;
+    text-align: center;
+    margin:0;
+}
+.part6 .form .eml{
+    width:370px;
+    height:51px;
+    margin-top:60px; 
+
+}
+.part6 .form .eml::-webkit-input-placeholder{text-align: center;}
+.part6 .form .sbj{
+    width:370px;
+    height:51px;
+    margin-top:30px; 
+    
+}
+.part6 .form .sbj::-webkit-input-placeholder{text-align: center;}
+
+.part6 .form .meg{
+    width:370px;
+    height:143px;
+    margin-top:30px;    
+}
+.part6 .form .meg::-webkit-input-placeholder{text-align: center;}
+.part6 .form .btn{
+    width:370px;
+    height:51px;
+    background-color: black; 
+    margin-top:30px;   
+}
+.part6 .form .btn[value]{color:white;}/*属性选择器*/
+/*------------contacts-----------------------*/
+.part6 .ctas{
+    display:inline-block;
+    float:right;
+    width:375px;
+    height:473px;
+    padding-top:88px; 
+}
+.part6 .ctas h2{
+    margin:0;
+    font-size:36px; 
+    color:black;
+}
+.part6 .ctas .txt{
+    margin: 40px 0  72px 0;
+    font-size:16px;
+    color:black; 
+    line-height: 28px;
+}
+.part6 .ctas dl{
+    position:relative;
+    margin:0;
+}
+.part6 .ctas .map{
+    height:41px;
+    margin-bottom:37px; 
+}
+.part6 .ctas .phone{
+    height:24px;
+    margin-bottom:32px; 
+}
+.part6 .ctas dl dt{
+    display: inline-block;
+    margin-left: 16px;
+
+}
+
+.part6 .ctas .map dt{
+    position: absolute;
+    top:0;
+    left:16px;
+    margin-left: 0;
+}
+
+.part6 .ctas dl dd{
+    display: inline-block;
+    margin:0;
+    margin-left:23px ;
+    font-size: 16px;
+     font-weight: bold;
+    
+
+}
+
+.part6 .ctas .map dd{
+     margin-left:63px ;        
+}
+
+.part6 .ctas dl dd p{
+    margin:0;   
+}
+/*-------------------footer--------------------*/
+#footer{
+    width:calc(100% - 401px);
+    height:208px;
+    background-color: black;
+    margin:0 auto;
+    padding:86px 189px 116px 212px;
+    
+}
+#footer div{
+    width:295px;
+    height:205px;
+    display: inline-block;
+    vertical-align: top;
+}
+#footer ul{
+    margin:0;
+    padding: 0;
+
+}
+#footer ul li{
+    list-style-type: none;
+    margin-bottom: 30px;
+
+}
+#footer ul li a{
+   text-decoration: none;
+   color:grey;
+   font-size: 12px;
+}
+#footer li:first-child a{
+    font-size: 16px;
+    color:white;
+}
+
+#footer li:first-child {
+    margin-bottom: 34px;
+}
+
+#footer li:last-child {
+    margin-bottom: 0;
+}
+
+#footer .col4 .induction{
+    line-height: 28px;
+
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车2</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/cart.css"/>
+</head>
+<body>
+<div class="cart-box">
+    <div class="title">
+        <h2>购物清单</h2>
+    </div>
+    <div class="cart-inner ">
+        <div class="cart-table-title clear">
+            <span class="name">商品信息</span>
+            <span class="operation">操作</span>
+            <span class="subtotal">小计</span>
+            <span class="num">数量</span>
+            <span class="price">单价</span>
+        </div>
+        <div class="cart-table">
+            <div class="cart-group">
+                <!--购物列表 5个-->
+                <div class="cart-items ">
+                    <div class="items-choose">
+                        <span class="blue-checkbox-new"> <a href="#"></a></span>
+                    </div>
+                    <div class="items-thumb">
+                        <img src="img/earphone.jpg" alt="earphone"><a href="#"></a>
+                    </div>
+                    <div class="name">
+                        <a href="#">Smartisan S-1001 圈铁线控耳机</a>
+                        <p>银色 | 3.5mm</p>
+                    </div>
+                    <div class="operation">
+                        <span></span>
+                    </div>
+                    <div class="subtotal">¥ 139.00</div>
+                    <div class="item-cols-num clear">
+                        <span class="down"></span>
+                        <span class="num">
+                            <input  type="text" value="1">
+                        </span>
+                        <span class="up"></span>
+                    </div>
+                    <div class="price">¥ 139.00</div>
+
+                </div>
+                <div class="cart-items">
+                    <div class="items-choose">
+                        <span class="blue-checkbox-new"> <a href="#"></a></span>
+                    </div>
+                    <div class="items-thumb">
+                        <img src="img/green.jpg" alt="green"><a href="#"></a>
+                    </div>
+                    <div class="name hide-row">
+                        <a href="#">坚果 3 绒布国旗保护套</a>
+                        <p>巴西|国旗</p>
+                    </div>
+                    <div class="operation"></div>
+                    <div class="subtotal">¥ 29.00</div>
+                    <div class="item-cols-num">
+                        <span class="down"></span>
+                        <span class="num">
+                            <input type="text" value="1">
+                        </span>
+                        <span class="up"></span>
+                    </div>
+                    <div class="price">¥ 29.00</div>
+                </div>
+                <div class="cart-items">
+                    <div class="items-choose">
+                        <span class="blue-checkbox-new"> <a href="#"></a></span>
+                    </div>
+                    <div class="items-thumb">
+                        <img src="img/quickcharge.jpg" alt="quickcharge"><a href="#"></a>
+                    </div>
+                    <div class="name hide-row">
+                        <a href="#">坚果 QuickCharge 4+ 快速充电器</a>
+                        <p>白色</p>
+                    </div>
+                    <div class="operation"></div>
+                    <div class="subtotal">¥ 59.00</div>
+                    <div class="item-cols-num">
+                        <span class="down"></span>
+                        <span class="num">
+                            <input type="text" value="1">
+                        </span>
+                        <span class="up"></span>
+                    </div>
+                    <div class="price">¥ 59.00</div>
+                </div>
+                <div class="cart-items">
+                    <div class="items-choose">
+                        <span class="blue-checkbox-new"> <a href="#"></a></span>
+                    </div>
+                    <div class="items-thumb">
+                        <img src="img/black.jpg" alt="black"><a href="#"></a>
+                    </div>
+                    <div class="name hide-row">
+                        <a href="#">坚果饼式无线充电座</a>
+                        <p>黑色</p>
+                    </div>
+                    <div class="operation"></div>
+                    <div class="subtotal">¥ 129.00</div>
+                    <div class="item-cols-num">
+                        <span class="down"></span>
+                        <span class="num">
+                            <input type="text" value="1">
+                        </span>
+                        <span class="up"></span>
+                    </div>
+                    <div class="price">¥ 129.00</div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="cart-bottom fix-bottom">
+        <div class="cart-operation">
+            <div class="choose-all">
+                <span class="blue-checkbox-new "><a href="#"></a></span>全选
+            </div>
+        </div>
+
+        <div class="shipping">
+            <div class="shipping-box">
+                <div class="shipping-total shipping-num">
+                    <h4 >已选择 <i>0</i> 件商品</h4>
+                    <h5>共计 <i >0</i>  件商品</h5>
+                </div>
+                <div class="shipping-total shipping-price">
+                    <h4>应付总额 <span> ￥</span> <i class="moneyall">0</i></h4>
+                    <h5>应付总额不含运费</h5>
+                </div>
+            </div>
+            <span class="cacu"><a href="#">现在结算</a></span>
+        </div>
+    </div>
+</div>
+<script>
+    /*
+                   列表
+                        - 勾选商品
+                        - 数量
+                        - 小计
+                    统计
+                        - 全选
+                        - 已勾选商品件数
+                        - 总计商品件数
+                        - 总额计算
+                        - 现在结算的点击
+                */
+    /*勾选功能*/
+    var ablueCheckboxes=document.querySelectorAll('.cart-items .blue-checkbox-new');//获取4个元素,数组
+    var aUps=document.querySelectorAll('.up');
+    var aDowns=document.querySelectorAll('.down');
+    var aNumInputs=document.querySelectorAll('.num input');
+    var aSubtotals=document.querySelectorAll('.cart-items .subtotal');
+    var aPrice=document.querySelectorAll('.cart-items .price');
+    var oChooseAll=document.querySelector('.choose-all .blue-checkbox-new');
+    var oTotalNum =document.querySelector('.shipping-total h5 i');
+    var oCacu=document.querySelector('.cacu');
+    var oCheckedNum=document.querySelector('.shipping-num h4 i');
+    var oAllMoney=document.querySelector('.shipping-price .moneyall');
+    //console.log(oCacu);
+    var  alltureflag=false;
+    //getTotalNum();
+
+    for(let i=0;i<ablueCheckboxes.length;i++){
+        getTotalNum();
+        isCacu();
+        getCostMoney();
+        //以下是4个勾选框的变化
+        ablueCheckboxes[i].isCheck=false;
+        ablueCheckboxes[i].onclick=function(){
+            if(ablueCheckboxes[i].isCheck){
+                ablueCheckboxes[i].classList.remove('checkbox-on');
+            }else{
+                ablueCheckboxes[i].classList.add('checkbox-on');
+            }
+            ablueCheckboxes[i].isCheck=!ablueCheckboxes[i].isCheck;
+            setAllChecked();
+            isCacu();
+            getCostMoney();
+        }
+        //以下是数量加加
+        aUps[i].onclick=function() {
+            let text = aNumInputs[i].value;//此时取得是个字符串类型，并不是number
+            //console.log(typeof text);
+            // console.log(text);
+            if (text >= 20) {
+                text = 20;
+                aUps[i].classList.add('up-disabled');
+            } else {
+                if(text>1){
+                    aDowns[i].classList.remove('down-disabled');
+                }
+                text++;
+                aNumInputs[i].value = text;
+            }
+            aSubtotals[i].innerHTML= '￥ '+ getSubtotal( aPrice[i].innerHTML, aNumInputs[i].value);
+            //console.log(aSubtotals[i].innerHTML);
+            //console.log(getSubtotal( aPrice[i].innerHTML, aNumInputs[i].value));
+            getTotalNum();
+            getCostMoney();
+        }
+        //以下是数量减减
+        aDowns[i].onclick=function(){
+                let text=aNumInputs[i].value;
+                if(text<=1){
+                    text=1;
+                    aDowns[i].classList.add('down-disabled');
+                }else{
+                    if(text<20){
+                        aUps[i].classList.remove('up-disabled');
+                    }
+                    text--;
+                    aNumInputs[i].value=text;
+                    getCostMoney();
+                }
+            aSubtotals[i].innerHTML= '￥ '+ getSubtotal( aPrice[i].innerHTML, aNumInputs[i].value);
+            getTotalNum();
+            }
+        //以下是点击全选按钮
+        oChooseAll.onclick=function() {
+            if (alltureflag) {
+                this.classList.remove('checkbox-on');
+                ablueCheckboxes.forEach(item => {
+                    item.classList.remove('checkbox-on');
+                    item.isCheck = !alltureflag;//注意！！
+                })
+
+            } else {
+                this.classList.add('checkbox-on');
+                ablueCheckboxes.forEach(item => {
+                    item.classList.add('checkbox-on');
+                    item.isCheck = !alltureflag;//这个地方一定要注意！
+                })
+
+            }
+            alltureflag = !alltureflag;
+            isCacu();
+            getCostMoney();
+
+        }
+        //以下是每一项小计的函数
+        function getSubtotal( price, num){
+            var result=0;
+            var x=0;
+            price=price.slice(1).trim();//选取从index为1的地方开始，也就是先把¥去掉，留下数字。
+            result=parseFloat(price) * num;
+            return result.toFixed(2);
+
+        }
+        //以下是当4个勾选框都选上时给全选也打勾。因为在每个勾选框时都要做判断，我们封装成函数。
+        function setAllChecked(){
+            var isAllChecked=[...ablueCheckboxes].every(item=>item.isCheck);//全选返回ture,有一个没选就返回false;
+            alltureflag=isAllChecked;
+            oChooseAll.classList[alltureflag?'add':'remove']('checkbox-on');
+
+        }
+        //以下是获取总计件数
+        function getTotalNum(){
+            var result=0;
+            result=[...aNumInputs].reduce( function(x,y){
+              y=Number(y.value); //x为上一次回调的值，若提供initialvalue,则x=初始值，即等于后面的0，y为当前项；
+              return x+y;
+            },0);//这里的0才是初始值；
+            oTotalNum.innerHTML=result;
+           // return oTotalNum.innerHTML;//函数的调用注意作用域，预解析不是万能的。
+        }
+        //以下是当发生勾选时，解算按钮的变化
+        function isCacu(){
+            var isSomeChecked=[...ablueCheckboxes].some(item=>item.isCheck);
+            oCacu.classList[isSomeChecked ?'remove':'add']('disabled-btn');
+        }
+        //以下是选中商品件数和总额计算
+        function getCostMoney(){
+            var selectedNum=0;
+            var costMoney=0;
+            ablueCheckboxes.forEach(function(item,index){
+                if(item.isCheck){
+                    selectedNum+=Number(aNumInputs[index].value);
+                    costMoney+=Number((aSubtotals[index].innerHTML).slice(1));
+                   // costMoney=costMoney.toFixed(2);
+                }
+                })
+            oCheckedNum.innerHTML=  selectedNum;
+            oAllMoney.innerHTML=costMoney;
+        }
+
+
+
+
+
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@charset "utf-8";
+.cart-box{
+    width:1218px;
+    border:1px solid black;
+    border-radius: 8px;
+    margin:0 auto;
+    margin-top:40px;
+    min-height:600px;
+    background-color:#ffffff;
+}
+.cart-box .title{
+    height:60px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size:18px;
+    line-height:60px;
+    padding-left:30px;
+    background-color:#f6f6f6;
+    border-radius: 8px 8px 0 0;
+}
+.cart-box .cart-inner{
+
+}
+.cart-box .cart-inner .cart-table-title{
+
+    height:38px;
+    border-bottom:1px solid #e9e9e9;
+    font-size:12px;
+    line-height:38px;
+    color:black;
+    padding:0 0 0 30px;
+    background-color:#eeeeee;
+}
+
+.cart-box .cart-inner .cart-table-title .operation,
+.cart-box .cart-inner .cart-table-title .subtotal,
+.cart-box .cart-inner .cart-table-title .num,
+.cart-box .cart-inner .cart-table-title .price{
+    width:137px;
+    float:right;
+    text-align:center;
+}
+.cart-box .cart-inner .cart-table .cart-group .cart-items{
+    position:relative;
+    height:80px;
+    border-top:1px dashed #eee;
+    margin-left:74px;/* 配合后面的absolute使用*/
+    padding:30px 0 30px 0px
+
+}
+.cart-box .cart-inner .cart-table .cart-group .cart-items:first-child{
+    border-top:none;
+}
+.cart-box .cart-inner .cart-table .cart-group .cart-items .items-choose{
+    position:absolute;/* 要想用absolute,就得放到width外面去，比如放在margin-left里面！*/
+    top:0;
+    left:-74px;
+    width:20px;
+    height:20px;
+    padding:60px 23px 0 31px;
+}
+.cart-box .blue-checkbox-new {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../img/checkbox-new.png) no-repeat 0 -20px; /* 负数就是背景图片向上移动了*/
+}
+.cart-box .checkbox-on{
+    background: url(../img/checkbox-new.png) no-repeat 0 0;
+}
+.cart-box .cart-inner .cart-table  .cart-items .items-thumb{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    margin-right:20px;
+    border:1px solid #f0f0f0;
+    cursor:pointer;
+}
+.cart-box  .cart-items .name{
+    position:absolute;
+    top:52px;
+   display:inline-block;
+    width:380px;
+    height:80px;
+
+}
+.cart-box  .cart-items .name a{
+    font-size:16px;
+    line-height:16px;
+    height:16px;
+    color:#333333;
+
+}
+.cart-box  .cart-items .name p{
+    font-size:12px;
+    line-height:12px;
+    margin-top:8px;
+    color:#b2a5c2;
+}
+.cart-box  .cart-items .operation,
+.cart-box  .cart-items .subtotal,
+.cart-box  .cart-items .item-cols-num,
+.cart-box  .cart-items .price{
+    width:137px;
+    float:right;
+    text-align:center;
+    line-height:80px;
+    height:80px;
+}
+.cart-box  .cart-items .subtotal{
+    font-weight:bold;
+}
+.cart-box  .cart-items .item-cols-num{
+    width:103px;
+    height:36px;
+    padding:22px 17px;
+}
+.cart-box .cart-items .item-cols-num .up,
+.cart-box .cart-items .item-cols-num .down {
+    float:left;
+    display:inline-block;
+    width:34px;
+    height:36px;
+    background: url(../img/cart-updown.jpg) no-repeat;
+    cursor: pointer;
+}
+.cart-box .cart-items .item-cols-num .up:hover{
+    background-position: 0 -120px;
+}
+
+.cart-box .cart-items .item-cols-num .up-disabled,
+.cart-box .cart-items .item-cols-num .up-disabled:hover{
+     background-position: 0 -240px;
+     cursor:not-allowed;
+ }
+.cart-box .cart-items .item-cols-num .down{
+    background-position: 0 -60px;
+}
+.cart-box .cart-items .item-cols-num .down:hover{
+    background-position: 0 -180px;
+}
+.cart-box .cart-items .item-cols-num .down-disabled,
+.cart-box .cart-items .item-cols-num .down-disabled:hover {
+    background-position: 0 -300px;
+    cursor: not-allowed;
+}
+.cart-box .cart-items .item-cols-num span input{
+    float:left;
+display:inline-block;
+    width:35px;
+    height:36px;
+    text-align: center;
+}
+/*---------------------bottom------------*/
+.cart-bottom{
+    width:100%;
+    height:90px;
+    border-top:1px solid #e9e9e9;
+
+}
+.cart-bottom .cart-operation{
+    float:left;
+    padding:35px 26px;
+    font-size:12px;
+
+}
+.cart-bottom  .choose-all{
+    float:left;
+    height:20px;
+    line-height:20px;
+    cursor: pointer;
+ }
+
+.cart-bottom  .choose-all .blue-checkbox-new{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:url(../img/checkbox-new.png) no-repeat 0 -20px;
+}
+.cart-bottom  .choose-all .checkbox-on{
+    background: url(../img/checkbox-new.png) no-repeat 0 0;
+}
+
+.cart-bottom .shipping{
+display:inline-block;
+    float:right;
+    padding:20px 30px 20px 0;
+}
+.cart-bottom .shipping .shipping-box{
+    display:inline-block;
+}
+
+.cart-bottom .shipping .shipping-num,
+.cart-bottom .shipping .shipping-price{
+    display:inline-block;
+    width:113px;
+    height:50px;
+    padding:0 19px;
+    border-left:1px solid #e1e1e1;
+}
+.cart-bottom .shipping .shipping-price{
+    text-align:left;
+
+}
+.cart-bottom .shipping .shipping-num{
+    border:none;
+    text-align:right;
+
+}
+.cart-bottom .shipping .cacu{
+    display:inline-block;
+    width:130px;
+    height:50px;
+    font-size:16px;
+    line-height:50px;
+    background-color: #678ef1;
+    border-radius:6px;
+    margin-left:34px;
+    text-align:center;
+    cursor: pointer;
+}
+.cart-bottom .shipping .cacu a{
+    color:#ffeefa;
+}
+.cart-bottom  .shipping  .disabled-btn,
+.cart-bottom  .shipping  .disabled-btn a{
+    cursor: not-allowed;
+    background-color: #cacaca;
+
+}

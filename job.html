@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About</title>
+    <title>求职技能</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-     <link href="css/clean-blog.min.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -32,6 +32,29 @@
 </head>
 
 <body>
+<style>
+   .container .row dl{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    margin-right: 20px;
+   } 
+   .container .row dd h4{
+   text-align: center;
+   }
+
+   .container .row dd p{
+    width:180px;
+   font-size: 16px;
+    text-align: center;
+   }  
+   .container .row dl dt img{
+    width:200px;
+    height:120px;
+    border: 1px solid black;
+   } 
+</style>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -42,23 +65,23 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Start here</a>
+                <a class="navbar-brand" href="index.html">首页</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">有关于我</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="job.html">求职技能</a>
                     </li>
                     <li>
-                        <a href="post.html">My Post</a>
+                        <a href="collection.html">我的作品</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="post.html">我的随笔</a>
                     </li>
                 </ul>
             </div>
@@ -72,11 +95,11 @@
     <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-10 col-lg-offset-2 col-md-8 col-md-offset-1">
                     <div class="page-heading">
-                        <h2>About Summer Paige</h2>
+                        <h1>专业技能</h1>
                         <hr class="small">
-                        <span class="subheading">I  am who I am.</span>
+                        <span class="subheading">前端开发工程师</span>
                     </div>
                 </div>
             </div>
@@ -86,18 +109,41 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>大家好，我是Summer Paige! Welcome to my personal website.</p>
-                <p>立志要当一名独一无二前端工程师，奈何一开始就走了很多弯路，好在这一路有人协助和指点，也好在自己从来没放弃，所以走慢点，不要紧。</p>
-                <p>我喜欢在看书写代码之余听听歌曲，最爱的歌手是<a  style="text-decoration:none" class="linkurl" href="http://music.163.com/#/artist?id=5346">王力宏</a>和<a style="text-decoration:none" class="linkurl" href="http://music.163.com/#/artist?id=33184">Ed Sheeran。</a></p>
-                <p>我喜欢在周末抽出半天的时间睡睡觉，放空自己，消除一周的疲惫，满血复活迎接第二天。</p>
-                <p>我喜欢早起或者晚饭后骑着单车逛逛校园或者老街，让心灵得到沉淀，忘记生活中的喧嚣，听听我的自己的心声。</p>
+            <div class="col-lg-12 col-lg-offset-2 col-md-12 col-md-offset-1">
+               <dl>
+                   <dt><img src="img/01.jpg" alt=""></dt>
+                   <dd>
+                   <h4> PS切图</h4>
+                   <p>掌握PSD基本切图方式，熟练使用PS。</p>
+                   </dd>
+               </dl> 
+               <dl>
+                   <dt><img src="img/02.jpg" alt=""></dt>
+                   <dd>
+                    <h4>网页制作</h4>
+                   <p>熟悉HTML5和CSS3，掌握基本布局。</p>
+                   </dd>
+               </dl> 
+               <dl>
+                   <dt><img src="img/03.jpg" alt=""></dt>
+                   <dd>
+                    <h4>前端功能</h4>
+                   <p>理解并熟悉JS核心技术DOM、BOM、Ajax等</p>
+                   </dd>
+               </dl> 
+               <dl>
+                   <dt><img src="img/04.jpg" alt=""></dt>
+                   <dd>
+                    <h4> Bootstrap框架应用</h4>
+                   <p>对Bootstrap框架应用有着一定的经验。</p>
+                   </dd>
+               </dl> 
 
             </div>
         </div>
     </div>
 
-    <hr>
+    
 
     <!-- Footer -->
 
@@ -150,6 +196,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
 
 </body>
 

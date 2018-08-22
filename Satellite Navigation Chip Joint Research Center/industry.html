@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/satellite.ico"/>
+    <link rel="icon" href="img/satellite.gif" type="image/gif" />
+    <link rel="bookmark" href="img/satellite.ico"/>
+    <title>卫星导航芯片联合研究中心</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/basic.css">
+    <script>
+        window.onload=function(){
+           var aLi=document.getElementsByClassName("tags");
+           var aSe=document.getElementsByClassName("maintext");
+           //console.log(aSe);
+
+           for(let i=0;i<aLi.length;i++){
+               aLi[i].onclick=function(){
+                   for(let i=0;i<aLi.length;i++){
+                       aLi[i].style.color='#999';
+                       aLi[i].parentElement.style.background='';
+
+                   }
+                   aLi[i].style.color='black';
+                   aLi[i].parentElement.style.background='url("img/tags.png")';
+
+                   for(let i=0;i<aSe.length;i++){
+                       aSe[i].style.display="none";
+                   }
+                   aSe[i+1].style.display="block";//section是4个
+               }
+
+           }
+        }
+
+
+    </script>
+</head>
+<body>
+<div>
+    <header id="header">
+        <div id="navbar" class="clearfix">
+            <h1>卫星导航芯片联合研究中心</h1>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">首页</a></li>
+                    <li ><a href="about.html">关于我们</a></li>
+                    <li ><a href="news.html">新闻动态</a></li>
+                    <li class="active"><a href="industry.html">行业发展</a></li>
+                    <li ><a href="projects.html">研究课题</a></li>
+                    <li ><a href="products.html">产品研发</a></li>
+                    <li ><a href="personnel.html">人才培养</a></li>
+                    <li ><a href="join.html">加入团队</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--图-->
+    <div class="banner">
+         <img src="img/industry.png" alt="industry">
+    </div>
+    <!--中间-->
+    <div id="main" class="clearfix">
+        <section class="maintext active">
+           <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+           <hr>
+           <h2>导航发展现状</h2>
+           <p >目前北斗三代导航系统建设已经实施，新的ICD文件已于8月公布，北斗全球系统将于2018年覆盖“一带一路”国家，2020年实现全球覆盖。卫星导航条例也在制定当中，将确立北斗系统法律地位、规范卫星导航领域相关活动、促进北斗产业发展。从行业角度来讲，北斗接收机不仅应用到海洋、内河舰船上，也推广到了金融、电信行业上。另外，北斗二代导航基础类产品已趋于成熟，北斗导航芯片应用规模达3000万，到明年这个量还会大大提高，已经单独有厂家预计2017年出货量将达到2500万。不管是业界生产厂家，还是检测机构，大家的共同目标就是推动北斗的占比以及北斗的产业发展，当然北斗目前的占比量估计不足10%。但是未来2018年到2020年，一方面推动北斗导航产品的升级换代、新体制、多系统互操作等产品面市，另一方面促进通信导航等技术融合发展。此外随着增强系统的推出，北斗导航产品的趋势是高端低用，产品精度指标得到大大提升。</p>
+        </section>
+        <section id="one" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>北斗前景</h2>
+            <p > 随着北斗卫星导航系统2012年底正式提供服务，北斗应用正处于快速发展时期。 据中国卫星导航定位协会《中国卫星导航与位置服务产业发展白皮书（2016年度）》统计， 2016年我国卫星导航与位置服务产业总体仍然保持高速发展态势，产业总体产值达到2,118亿元，较2015年增长22.1%，其中包括与卫星导航技术直接相关的芯片、器件、算法、软件、导航数据、终端设备等在内的产业核心产值达到808亿元，北斗对产业核心产值的贡献率已达70%；2016年国内导航定位终端产品总销量突破5.3亿台，其中具有卫星导航定位功能的智能手机销售量达到5.1亿台。</p>
+        </section>
+        <section id="two" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>国内现状</h2>
+            <p > 北斗卫星导航系统是中国自主发展、独立运行的全球卫星导航系统，致力于向全球用户提供高质量的定位、导航、授时和短报文通信服务。中国在2003年完成了具有区域导航功能的北斗卫星导航试验系统，之后开始构建服务全球的北斗卫星导航系统，于2012年起向亚太大部分地区正式提供服务，并计划至2020年完成全球系统的构建。 截至2017年11月底，北斗卫星导航系统的卫星总数已达到25枚， 开始全球组网。中国的北斗卫星导航系统与美国全球定位系统（GPS）、俄罗斯格洛纳斯系统（GLONASS）和欧盟的伽利略定位系统（GALILEO）一并成为联合国卫星导航委员会认定的全球卫星导航系统四大核心供应商。</p>
+        </section>
+        <section id="three" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>现有难点</h2>
+            <p >  北斗导航民用服务的资质管理工作由中国卫星导航定位应用管理中心负责组织实施，根据《北斗导航民用服务资质管理规定》，北斗导航民用服务资质分为北斗导航民用分理级服务资质（指分理北斗卫星导航定位、授时、位置报告和短信服务，开展获准的增值服务和应用项目开发）和北斗导航民用终端级服务资质（指开展北斗卫星导航芯片、板卡、模块、整机等终端产品的生产活动）两种。为规范北斗卫星导航民用服务，加强北斗导航民用服务单位资质管理，保障北斗卫星导航系统安全，促进北斗卫星导航产业健康发展，北斗导航民用服务资质的申请需要一定的门槛。新进企业很难短期内获得相关资质并组织产品的研发和生产。</p>
+        </section>
+
+
+        <aside>
+            <h2>行业发展</h2>
+            <hr>
+            <ul>
+                <li><a class="tags" href="#one">北斗前景</a></li>
+                <li><a class="tags"  href="#two" >国内现状</a></li>
+                <li><a class="tags" href="#three">现有难点</a></li>
+            </ul>
+        </aside>
+    </div>
+     <footer><span>©2018 版权所有：卫星导航芯片联合研究中心</span><span>123456</span>号 <br>技术支持：卫星导航芯片联合研究中心
+    </footer> 

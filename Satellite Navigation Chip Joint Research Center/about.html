@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/satellite.ico"/>
+    <link rel="icon" href="img/satellite.gif" type="image/gif" />
+    <link rel="bookmark" href="img/satellite.ico"/>
+    <title>卫星导航芯片联合研究中心</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/basic.css">
+    <!-- <script type="text/javascript" src="js/carous.js"></script>-->
+    <script>
+        window.onload=function(){
+           var aLi=document.getElementsByClassName("tags");
+           var aSe=document.getElementsByClassName("maintext");
+           //console.log(aSe);
+
+           for(let i=0;i<aLi.length;i++){
+               aLi[i].onclick=function(){
+                   for(let i=0;i<aLi.length;i++){
+                       aLi[i].style.color='#999';
+                       aLi[i].parentElement.style.background='';
+
+                   }
+                   aLi[i].style.color='black';
+                   aLi[i].parentElement.style.background='url("img/tags.png")';
+
+                   for(let i=0;i<aSe.length;i++){
+                       aSe[i].style.display="none";
+                   }
+                   aSe[i+1].style.display="block";//section是4个
+               }
+
+           }
+        }
+
+
+    </script>
+</head>
+<body>
+<div>
+    <header id="header">
+        <div id="navbar" class="clearfix">
+            <h1>卫星导航芯片联合研究中心</h1>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">首页</a></li>
+                    <li class="active"><a href="about.html">关于我们</a></li>
+                    <li ><a href="news.html">新闻动态</a></li>
+                    <li ><a href="industry.html">行业发展</a></li>
+                    <li ><a href="projects.html">研究课题</a></li>
+                    <li ><a href="products.html">产品研发</a></li>
+                    <li ><a href="personnel.html">人才培养</a></li>
+                    <li ><a href="join.html">加入团队</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--图-->
+    <div class="banner">
+         <img src="img/about.jpg" alt="about">
+    </div>
+    <!--中间-->
+    <div id="main" class="clearfix">
+        <section class="maintext active">
+           <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+           <hr>
+           <h2>关于卫星导航芯片联合研究中心</h2>
+           <p >我们科技是中国值得信赖的科技服务合作伙伴，作为全方位IT服务及行业解决方案提供商，我们拥有全球运营能力，通过严格的质量标准和交付流程来保证客户的商业价值。 我们在金融服务业、高科技行业、电信业等领域积累了丰富的行业经验，客户重点针对国内顶级金融机构及财富500强企业，具备全面的IT专业服务能力，为客户提供IT咨询、解决方案和外包服务，包括企业解决方案、应用软件开发和维护、质量保证和测试、本地化和全球化、研究及开发、基础设施外包以及业务流程外包呼叫中心等服务，帮助客户实现投资收益最大化，并使之更专注于自身核心业务。 我们充分解析客户需求的重点，采用独有的在岸－离岸服务模式，并融入了在不断为客户提供一流服务过程中形成的与众不同的企业文化。我们关注人力资源的发展，拥有一批极富潜力、训练有素的员工，为客户提供涵盖整个应用服务生命周期的服务。 我们为从事银行、保险、证券和租赁等金融服务行业的公司提供优质的BPO外包（业务流程外包）服务，同时提供高质量的核心流程BPO服务，包括各行业的扩展数据录入和桌面排版服务。凭借在国内二线城市拥有成本和人才的优势，我们可为客户提供一站式ITO及BPO服务。 我们专注于技术服务，对技术的热情和对商业的敏锐确保了我们在客户预算范围内，按时提交高质量的产品和服务并同时满足客户对业务和技术两方面的需求。我们致力于通过提供全球符合质量和安全标准的ITO和BPO服务来改善客户的业务绩效。 与我们合作，您就拥有了一个经验丰富、技术精湛的外包合作伙伴，可帮助您提高软件解决方案的质量，缩短软件开发时间并降低软件开发成本，贴心细致的服务使得您专注于核心竞争力，创造核心商业价值。</p>
+        </section>
+        <section id="one" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>价值文化</h2>
+            <div class="tagstext">
+                <h3>价值观</h3>
+                <p>诚实、正直、勤奋、专注服务、赢在细节</p>
+                <h3>愿景</h3>
+                <p>成为受到行业及员工普遍尊敬的一流服务外包企业，帮助客户提升核心竞争力，在局部区域形成核心能力，通过帮助员工创造价值提升企业价值 </p>
+                <h3>使命</h3>
+                <p>为员工：成为发掘和培养优质IT人才的沃土 为客户：成为客户忠实可靠的合作伙伴，帮助客户提升价值 为社会：承担公司应有的社会责任，帮助更多人才提升个人价值，实现可持续发展</p>
+            </div>
+        </section>
+        <section id="two" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>社会责任</h2>
+            <div class="tagstext">
+                <h3>主动承担社会义务</h3>
+                <p>我们始终坚信：每个公司作为经济社会的重要终端对社会具有不可推卸的责任和义务，并致力于将这一观点推广到公司的每个部门，直至每个员工。</p>
+                <h3>公益活动</h3>
+                <p>随着市场经济的发展，在众多取得丰裕经济收益的成功企业家中，逐渐涌现出一批富有社会责任感和公益道德心的人。他们重新思考生命的意义，重新定义企业使命。他们以企业家的才能去做慈善家，以公民的责任去做公益活动家，由此参与社会的自我治理，从而复兴和深化民间公益传统。他们身体力行“经世济民，以人为本，义利兼顾”的经营之道，因而取得经济效益与社会效益的双赢。在他们的眼中，公益，是每个企业必尽的责任；公益，是每个企业家应有的良知。 </p>
+                <h3>经济价值</h3>
+                <p>教育科研是教育工作不可或缺的一部分，与教育决策和实践共同构成完整的现代教育工作体系，也是科学的一部分，既要遵循科学的共同规范，也有自己的个性。在教育工作中，理论与实践相辅相成，相互促进，理论逐渐为广大教育工作者所认识和掌握，在教育改革发展中发挥着重要的先导性和基础性作用，越来越成为推动教育变革的第一生产力。</p>
+            </div>
+        </section>
+        <section id="three" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>师资力量</h2>
+            <p >王峰教授是我校“百人计划”引进的特聘教授，具有20多年在一流微电子芯片公司从事研究、设计和生产管理的能力，他在国际学报和国际期刊上发表论文53篇，美国和国际专利23项。王教授带领团队完成了北斗－GPS高性能基带芯片的开发，填补了我国导航芯片的空白，并于2010年发明了嵌入在移动网中的卫星导航差分技术、用来构建世界上最便宜、用户最多的高精度导航增强系统。在卫星导航系统中，干扰和欺骗普遍存在，王教授提议的基于合成孔径、相控阵天线，结合惯性导航的新技术可以有效的抑制干扰。为了应世界潮流，在节能环保的智能交通系统上，提出高科技的解决方案，开发了世界上最准确的单轨车辆动力学模型，利用惯性传感器、电脑控制的转弯电机、非线性车辆模型和控制软件构成的自动平衡系统，来达到安全、容易驾驶的要求。王教授曾承担和参与多项英特尔公司芯片开发项目，参加过0.25微米、0.18微米、0.13微米、90纳米、65纳米和45纳米器件开发任务，历任资深工程师（Sr. Engineer）、高级工程师 (Staff Engineer) 、资深高级工程师 (Sr. Staff Engineer) 。</p>
+        </section>
+
+
+        <aside>
+            <h2>导航中心</h2>
+            <hr>
+            <ul>
+                <li><a class="tags" href="#one">价值文化</a></li>
+                <li><a class="tags"  href="#two" >社会责任</a></li>
+                <li><a class="tags" href="#three">资质荣誉</a></li>
+            </ul>
+        </aside>
+    </div>
+     <footer><span>©2018 版权所有：卫星导航芯片联合研究中心</span><span>123456</span>号 <br>技术支持：卫星导航芯片联合研究中心
+    </footer>  
+        
+       
+
+    

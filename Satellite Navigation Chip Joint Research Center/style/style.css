@@ -1,0 +1,191 @@
+                                                      /*heasder导航条部分-------------*/
+#header{
+    width:100%;
+    height:80px;
+    background-color: black;
+}
+#navbar{
+    width:1263px;
+    height:80px;
+    margin:0 auto;
+}
+
+#navbar h1{
+    float:left;
+    color:ghostwhite;
+    line-height:80px;
+    font-size:28px;
+    background: url("../img/satellite.png") no-repeat 0 8px;
+    width:346px;
+    height:80px;
+    padding-left:64px;
+}
+#navbar ul{
+    float:right;
+    font-size:0;<!-- li标签之间存在间隙，每个标签是不连贯的，存在空格。设置ul的font-size为0；或者在每个li之间加注释 -->
+}
+#navbar ul li{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    padding:0 10px;
+    text-align: center;
+}
+#navbar ul li a{
+    line-height:80px;
+    font-size:20px;
+    font-weight: bolder;
+    color:ghostwhite;
+}
+#navbar ul li a:hover{
+    color:yellow;
+}
+#navbar ul .active{
+    background-color:dimgrey;
+}
+
+/*-------------------------------------轮播图部分-----------------------*/
+ .container{
+     width:100%;
+     position:relative;
+ }
+ .container  img{
+     width:100%;
+     height:500px;
+ }
+#pre, #next{
+    cursor: pointer;
+    position:absolute;
+    width:40px;
+    font-size:40px;
+    font-weight: bolder;
+    color: white;
+    padding:0 10px;
+    top:40%;
+}
+#next{
+   right:0;
+}
+.dottop{
+    position:absolute;
+    bottom:10px;
+    left:50%
+}
+.dot {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+}
+.dot:hover{
+    background-color: #717171;
+}
+.active{
+    background-color: #717171 ;
+}
+.mySlides {
+    height:500px;
+    display: none;
+    padding: 0 auto;
+   }
+.fade{
+    animation-name: myfade;
+    animation-duration: 1s;
+    -webkit-animation-name: myfade;/* safari&chrome */
+    -webkit-animation-duration: 1s;
+}
+@keyframes myfade {
+    from{opacity:0.4}
+    to{opacity: 1}
+}
+@-webkit-keyframes myfade{  /* safari&chrome */
+    from{opacity:0.4}
+    to{opacity: 1}
+}
+                                      /*------------------items----------------*/
+#items{
+    margin-top:50px;
+}
+.item1,.item2 {
+    margin:0 auto;
+    margin-bottom:50px;
+    width: 1263px;
+    text-align: center;
+}
+.item1 h2,.item2 h2{
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #666;
+}
+ .item1 p,.item2 p{
+     color: #666;
+     font-size:20px;
+     margin-top:15px ;
+
+ }
+.hr{
+    display:block;
+    width:73px;
+    height:3px;
+    background-color:#000000;
+    margin:35px 595px;
+}
+.fins fingure {
+    float: left;
+    margin: 0 50px 50px 0;
+}
+.fin2 fingure{
+    margin-left:50px;
+    position:relative;
+}
+.fins fingure figcaption{
+    font-size:14px;
+    line-height:20px;
+    color: #777;
+    font-weight: bold;
+}
+.fin2 figcaption{
+    box-sizing: border-box;
+    width: 100%;
+    height:80%;
+    position: absolute;
+    top:160px;
+    text-align: center;
+}
+.fin2 fingure:hover img {
+    transform: scale(1.1);
+    transition: transform 0.55s;
+}
+.fin2 fingure:hover figcaption{
+    background-color: rgba(0, 0, 0, 0.3);
+    transform:translate3d(0,-85%,0);
+    transition: transform 0.55s,background-color 0.55s ;
+
+}
+.fin2 fingure:hover .content{
+    opacity: 1;
+}
+.fin2 figcaption  .text{
+    font-size: 24px;
+    color: white;
+    margin-bottom:15px;
+    position: relative;
+
+}
+.fin2 figcaption  .content {
+    font-size:14px;
+    line-height:24px;
+    color: white;
+    opacity: 0;
+}
+/* --------------------footer---------------*/
+footer{
+    color: #c6c6c6;
+    line-height:40px;
+    text-align:center;
+    height:80px;
+    background-color: #333;
+}

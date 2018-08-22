@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/satellite.ico"/>
+    <link rel="icon" href="img/satellite.gif" type="image/gif" />
+    <link rel="bookmark" href="img/satellite.ico"/>
+    <title>卫星导航芯片联合研究中心</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/basic.css">
+    <script>
+        window.onload=function(){
+           var aLi=document.getElementsByClassName("tags");
+           var aSe=document.getElementsByClassName("maintext");
+           //console.log(aSe);
+
+           for(let i=0;i<aLi.length;i++){
+               aLi[i].onclick=function(){
+                   for(let i=0;i<aLi.length;i++){
+                       aLi[i].style.color='#999';
+                       aLi[i].parentElement.style.background='';
+
+                   }
+                   aLi[i].style.color='black';
+                   aLi[i].parentElement.style.background='url("img/tags.png")';
+
+                   for(let i=0;i<aSe.length;i++){
+                       aSe[i].style.display="none";
+                   }
+                   aSe[i+1].style.display="block";//section是4个
+               }
+
+           }
+        }
+
+
+    </script>
+</head>
+<body>
+<div>
+    <header id="header">
+        <div id="navbar" class="clearfix">
+            <h1>卫星导航芯片联合研究中心</h1>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">首页</a></li>
+                    <li ><a href="about.html">关于我们</a></li>
+                    <li ><a href="news.html">新闻动态</a></li>
+                    <li ><a href="industry.html">行业发展</a></li>
+                    <li ><a href="projects.html">研究课题</a></li>
+                    <li class="active"><a href="products.html">产品研发</a></li>
+                    <li ><a href="personnel.html">人才培养</a></li>
+                    <li ><a href="join.html">加入团队</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--图-->
+    <div class="banner">
+         <img src="img/products.jpg" alt="products">
+    </div>
+    <!--中间-->
+    <div id="main" class="clearfix">
+        <section class="maintext active">
+           <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+           <hr>
+           <h2>关于卫星导航芯片联合研究中心</h2>
+           <p >我国幅员辽阔，是世界上自然灾害频发的国家之一。每年的自然灾害都给人民生命财产带来严重损失，因灾死亡人数每年有近2万人，直接经济损失高达数千亿元。其中，社会公众不能在第一时间接收到预警信息是自然灾害造成严重损失的一个重要原因。多年来，在各级政府的大力支持下，我国气象灾害预警信息发布能力得到提升。 2012年，党的十八大提出了“加强防灾减灾体系建设，提高气象、地质、地震灾害防御能力” 。 人们目前主要通过广播电视、手机短信等方式获取应急预警信息， 但这类通信方式存在很大的盲区，并且在发生重大自然灾害时可能产生通信障碍， 人们不能及时发布预警信息和开展有效救援工作。我国北斗导航系统具有其他卫星导航系统所不具备的短报文通信功能，有着覆盖范围广、全天时、全天候不间断服务、安全可靠、短报文通信同时可导航定位等优点，尤其在地面通信信号中断的情况下，是一种可靠的备份通信方式。 国家气象局于2012年确立了”国家预警信息发布系统项目二期建设中增加北斗卫星应急预警信息发布系统”。目前，国家气象局已将北斗通信作为主要预警信息发布手段，根据测算仅山西省11个市、 119个县和约3万个行政村的北斗应急预警系统的建设费用就达到3亿元。按此测算，国家气象预警体系建设中的北斗应急预警系统市场规模将达50亿元以上。若将其应用到防灾减灾的其他领域，则市场容量更为广阔。 同时， 若将其应用到防灾减灾的其他领域，市场容量扩展可期。</p>
+        </section>
+        <section id="one" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>价值文化</h2>
+            <div class="tagstext">
+                <h3>价值观</h3>
+                <p>诚实、正直、勤奋、专注服务、赢在细节</p>
+                <h3>愿景</h3>
+                <p>成为受到行业及员工普遍尊敬的一流服务外包企业，帮助客户提升核心竞争力，在局部区域形成核心能力，通过帮助员工创造价值提升企业价值 </p>
+                <h3>使命</h3>
+                <p>为员工：成为发掘和培养优质IT人才的沃土 为客户：成为客户忠实可靠的合作伙伴，帮助客户提升价值 为社会：承担公司应有的社会责任，帮助更多人才提升个人价值，实现可持续发展</p>
+            </div>
+        </section>
+        <section id="two" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>社会责任</h2>
+            <div class="tagstext">
+                <h3>主动承担社会义务</h3>
+                <p>我们始终坚信：每个公司作为经济社会的重要终端对社会具有不可推卸的责任和义务，并致力于将这一观点推广到公司的每个部门，直至每个员工。</p>
+                <h3>公益活动</h3>
+                <p>随着市场经济的发展，在众多取得丰裕经济收益的成功企业家中，逐渐涌现出一批富有社会责任感和公益道德心的人。他们重新思考生命的意义，重新定义企业使命。他们以企业家的才能去做慈善家，以公民的责任去做公益活动家，由此参与社会的自我治理，从而复兴和深化民间公益传统。他们身体力行“经世济民，以人为本，义利兼顾”的经营之道，因而取得经济效益与社会效益的双赢。在他们的眼中，公益，是每个企业必尽的责任；公益，是每个企业家应有的良知。 </p>
+                <h3>经济价值</h3>
+                <p>教育科研是教育工作不可或缺的一部分，与教育决策和实践共同构成完整的现代教育工作体系，也是科学的一部分，既要遵循科学的共同规范，也有自己的个性。在教育工作中，理论与实践相辅相成，相互促进，理论逐渐为广大教育工作者所认识和掌握，在教育改革发展中发挥着重要的先导性和基础性作用，越来越成为推动教育变革的第一生产力。</p>
+            </div>
+        </section>
+        <section id="three" class="maintext">
+            <div class="tag"><img src="img/position.png" >&nbsp&nbsp当前位置：正文</div>
+            <hr>
+            <h2>师资力量</h2>
+            <p >王峰教授是我校“百人计划”引进的特聘教授，具有20多年在一流微电子芯片公司从事研究、设计和生产管理的能力，他在国际学报和国际期刊上发表论文53篇，美国和国际专利23项。王教授带领团队完成了北斗－GPS高性能基带芯片的开发，填补了我国导航芯片的空白，并于2010年发明了嵌入在移动网中的卫星导航差分技术、用来构建世界上最便宜、用户最多的高精度导航增强系统。在卫星导航系统中，干扰和欺骗普遍存在，王教授提议的基于合成孔径、相控阵天线，结合惯性导航的新技术可以有效的抑制干扰。为了应世界潮流，在节能环保的智能交通系统上，提出高科技的解决方案，开发了世界上最准确的单轨车辆动力学模型，利用惯性传感器、电脑控制的转弯电机、非线性车辆模型和控制软件构成的自动平衡系统，来达到安全、容易驾驶的要求。王教授曾承担和参与多项英特尔公司芯片开发项目，参加过0.25微米、0.18微米、0.13微米、90纳米、65纳米和45纳米器件开发任务，历任资深工程师（Sr. Engineer）、高级工程师 (Staff Engineer) 、资深高级工程师 (Sr. Staff Engineer) 。</p>
+        </section>
+
+
+        <aside>
+            <h2>导航中心</h2>
+            <hr>
+            <ul>
+                <li><a class="tags" href="#one">价值文化</a></li>
+                <li><a class="tags"  href="#two" >社会责任</a></li>
+                <li><a class="tags" href="#three">资质荣誉</a></li>
+            </ul>
+        </aside>
+    </div>
+     <footer><span>©2018 版权所有：卫星导航芯片联合研究中心</span><span>123456</span>号 <br>技术支持：卫星导航芯片联合研究中心
+    </footer> 

@@ -1,0 +1,93 @@
+.container{
+    width:1000px;
+    height:524px;
+    background: url("../img/box-bg.png") no-repeat;
+    margin:100px auto;
+    padding-top:165px;
+}
+.content{
+    width:663px;
+    height:300px;
+    margin:0 auto;
+    background-color: #fff;
+    padding:50px 32px;
+}
+.title{
+    border-top:2px solid  #e7788d;
+    background:url("../img/ball.png") no-repeat left 12px;
+    font-size:16px;
+    line-height:48px;
+    height:51px;
+    padding-left:32px;
+}
+.items{
+    height:145px;
+    border-bottom:1px dashed #e5e5e5;
+}
+.items dl{
+    float:left;
+    width:100px;
+    margin-right:40px;
+}
+.items .margin0{
+    margin-right:0;
+}
+.items dl dt{
+    width:87px;
+    height:82px;
+    padding:16px 0 0 11px;
+    border:1px solid #e5e5e5;
+
+}
+.items dl dd{
+    font-size:15px;
+    line-height:33px;
+    text-align:center;
+}
+.items dl dd a{
+    color:#3a3a3a;
+}
+
+.link {
+    margin-top:30px;
+}
+.link p{
+    margin-bottom:10px;
+}
+.link p .link_btn{
+    float:left;
+    width:100px;
+    height:30px;
+    font-size:14px;
+    line-height:30px;
+    background:#e7788d;
+    text-align: center;
+    color:white;
+    margin-left:3px;
+    margin-right:6px;
+}
+.link p .links{
+    float:left;
+    width:92px;
+    text-align:center;
+    color:#a5a5a5;
+    font-size:14px;
+    line-height:28px;
+}
+.link p .width116{
+    width:116px;
+}
+.link p span{
+    float:left;
+    width:1px;
+    height:16px;
+    background-color: #a5a5a5;
+    margin-top:7px;
+}
+.link .more{
+    float:right;
+    color:#a5a5a5;
+    font-size:14px;
+    line-height:28px;
+    margin-right:6px;
+}

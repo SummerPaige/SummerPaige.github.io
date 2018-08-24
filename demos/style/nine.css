@@ -1,0 +1,71 @@
+
+.container{
+    width:700px;
+    height:700px;
+    margin:100px auto;
+    background: pink;
+    overflow:hidden;/*-防止第一个子元素的margin-top溢出-*/
+}
+.box{
+    width:400px;
+    height:400px;
+    background: rgba(246,173,185,0.8);
+    margin:144px auto 0;
+    border-radius: 16px;
+    padding:11px;
+}
+.img{
+    width:366px;
+    height:366px;
+    border-radius: 11px;
+    padding:18px 16px 16px 18px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 2px;
+}
+.grid{
+    background: #ccc;
+    filter:grayscale(100%);
+    border-radius: 6px;
+}
+.grid:hover{
+    filter:grayscale(0%);
+}
+.grid:nth-child(1){
+    background:url("../img/f1.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(2){
+    background:url("../img/f2.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(3){
+    background:url("../img/f3.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(4){
+    background:url("../img/f4.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(5){
+    background:url("../img/f5.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(6){
+    background:url("../img/f6.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(7){
+    background:url("../img/f7.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(8){
+    background:url("../img/f8.png") ;
+    background-size:100% 100%;
+}
+.grid:nth-child(9){
+    background:url("../img/f9.png") ;
+    background-size:100% 100%;
+}
+

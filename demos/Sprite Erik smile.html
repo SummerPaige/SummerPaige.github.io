@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>雪碧图</title>
+</head>
+<style>
+body{
+	background:black;
+}
+	div{
+      width:480px;
+      height:480px;
+      margin:0 auto;
+      margin-top:60px;
+      background: url(img/erik_ce204002.jpg) no-repeat ;
+      
+	}
+</style>
+<body>
+<script>
+	window.onload=function(){
+    let oDiv=document.querySelector('div');
+   //alert(oDiv);
+    const x= 0;
+    let y=480;
+    let timer;
+    //oDiv.style.cssText='backgroundPosition: 0px -7680px';//无效，为什么？？？
+    //oDiv.style.backgroundPosition=x+"px "+y+"px";//第一个px后面必须有一个空格，否则失效。
+    /*可以分别设置
+    oDiv.style.backgroundPositionX=x+"px";
+    oDiv.style.backgroundPositionY=y+"px";
+    */
+   //let PY=getComputedStyle(oDiv).backgroundPositionY;
+   
+
+   //alert(PY);
+   Change();
+   function Change(){
+   	y=y-480;
+   	oDiv.style.backgroundPositionY=y+"px";
+   	//let PY=getComputedStyle(oDiv).backgroundPositionY;
+   	//alert(PY);
+   	
+   	timer=setTimeout(Change,100);
+
+   	if(y==-7680){
+   		y=-7680;
+   		clearTimeout(timer);
+   		
+   	}
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+</script>
+	<div>
+		
+	</div>
+</body>
+</html>

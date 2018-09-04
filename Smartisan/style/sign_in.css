@@ -1,0 +1,179 @@
+body{
+    background: #f7f7f7;
+}
+#wrap{
+    width:440px;
+    height:550px;
+    margin:50px auto 0;
+    background:#ffffff;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+#wrap .main .title{
+    height:167px;
+    margin:23px 0 50px;
+    background: url("../img/sign_in.png") no-repeat top center;
+    background-size: 160px 160px;
+}
+#wrap .main .title h2{
+    position:relative;
+    top:141px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:normal;
+}
+#wrap .main .info{
+    padding:0 40px 22px;
+    width:370px;
+    height:288px;
+}
+#wrap .main .info .input {
+    width:370px;
+    box-shadow: 0 3px 5px -4px rgba(0,0,0,.4) inset, -1px 0 3px -2px rgba(0,0,0,.1) inset;
+    border: #ccc solid 1px;
+    border-radius: 6px;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+}
+#wrap .main .info .input{
+    margin-bottom:15px;
+}
+#wrap .main .info .btn{
+    margin:20px 0 30px;
+}
+#wrap .main .info .input .icon{
+    float:left;
+    display:block;
+    background: white;
+    border-radius: 6px 0 0 6px;
+    border-right: solid 1px #ccc;
+    box-shadow: 1px 0 3px -1px rgba(0,0,0,.1);
+    height: 46px;
+    width: 46px;
+    overflow: hidden;
+}
+#wrap .main .info .input .icon i{
+    display:block;
+    width:46px;
+    height:46px;
+    text-indent: -9999px;
+}
+#wrap .main .info .name .icon i{
+    background: url("../img/sign_in_user.png") -1px 0;
+}
+#wrap .main .info .pwd .icon i{
+    background: url("../img/sign_in_user.png") -47px 0;
+}
+#wrap .main .info .input input{
+    outline: none;
+    float:right;
+    width:293px;
+    height:20px;
+    padding:12px 12px 12px 15px;
+    border:none;
+    color:#e4e5e4;
+    font-size:16px;
+    line-height:20px;
+    border-radius: 0 6px 6px 0;
+}
+#wrap .main .info  .btn input{
+    width:100%;
+    height:100%;
+    background:#bacbed ;
+    color:#f1f3f7;
+    font-size:18px;
+    border-radius: 6px;
+}
+#wrap .main .info  .tag{
+    width:100%;
+}
+#wrap .main .info  .tag span{
+    float: left;
+    display:inline-block;
+    padding-left:22px;
+    background: url("../cart/img/checkbox-new.png") no-repeat;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    height:20px;
+    line-height:20px;
+}
+#wrap .main .info  .tag a{
+    display:inline-block;
+    float:right;
+    font-size: 12px;
+    cursor: pointer;
+    height:20px;
+    line-height:20px;
+    color:#7579d9;
+}
+#wrap .main .info  .tag .r{
+    margin-right:8px;
+}
+#wrap .main .info .others{
+    width:370px;
+    height:18px;
+    padding-top:23px;
+    border-top:1px solid #d9d9d9;
+}
+
+#wrap .main .info .others ul li:first-child{
+    float:left;
+    height:17px;
+    line-height:17px;
+    color:#999999;
+}
+#wrap .main .info .others ul .cta{
+    float:left;
+    width:20px;
+    height:17px;
+    background: url("../img/sign_in_account.png") no-repeat ;
+    margin-left:10px;
+    filter:grayscale(100%);
+}
+#wrap .main .info .others ul .cta:hover{
+    filter:grayscale(0);
+}
+#wrap .main .info .others ul .wechat{
+    background-position: 0 0;
+}
+#wrap .main .info .others ul .weibo{
+    background-position: -30px 0;
+}
+#wrap .main .info .others ul .qq{
+    background-position: -63px 0;
+}
+#wrap .main .info .others ul .alipay{
+    background-position: -95px 0;
+}
+
+#wrap .main .info .others ul  li:last-child{
+    float:right;
+
+}
+#wrap .main .info .others ul  li:last-child a{
+    height:17px;
+    line-height:17px;
+    color:#999999;
+}
+#wrap .main .info .others ul  li:last-child a:hover{
+    color:#7579d9;
+}
+/*----------------------------footer------------------------*/
+
+#footer div{
+    margin:45px auto 0;
+}
+#footer div p {
+    font-size:12px;
+    line-height:20px;
+    text-align: center;
+}
+
+#footer div p span{
+    margin-right:10px;
+}
+#footer div p a{
+    color:#5079d9;
+}

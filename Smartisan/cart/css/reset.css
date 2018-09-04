@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+/*html,body { user-select: none; -moz-user-select: none; -webkit-user-select: none; }*/
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+select,
+textarea,
+form{
+    margin:0;
+    padding:0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight:400;
+}
+html {
+    height: 100%;
+    background: #ededed;
+}
+body{
+    font-family: "Helvetica Neue","PingFang SC",Helvetica,Arial,Hiragino Sans GB,"Microsoft Yahei",sans-serif;
+    color: rgb(102, 102, 102);
+    font-size:14px;
+    min-width:1220px;
+}
+li{
+    list-style: none;
+}
+img{
+    border:none;
+    display:block;/*图片默认有边框？*/
+}
+input,
+select,
+textarea,
+button{
+    font-family:tahoma, arial, 'Hiragino Sans GB', '微软雅黑', sans-serif ;
+    outline:none;  /*消除默认点击蓝色边框效果*/
+    border:none;
+    background-color: transparent;
+}
+em,
+i,
+dfn{
+    font-style: normal;/*默认值。浏览器显示一个标准的字体样式。*/
+}
+textarea{
+    resize: none;/*resize 属性规定是否可由用户调整元素的尺寸。如果希望此属性生效，需要设置元素的 overflow 属性，值可以是 auto、hidden 或 scroll。*/
+    overflow:auto;
+    outline:none;
+}
+a{
+    text-decoration: none;
+    color:#666;
+    outline:none;
+    cursor:pointer;
+}
+a:hover{
+    outline:none;
+}
+button {
+    cursor: pointer;
+}
+button:focus{
+    border:none;
+    outline:none;
+}
+pre {
+    white-space: pre-wrap!important;
+    word-wrap: break-word!important;
+    *white-space:normal!important;
+}
+
+.clear:before,
+.clear:after{
+    content:' ';
+    display:none;
+}
+.clear:after{
+    clear:both;
+}
+.clear{
+    *zoom:1;
+}
+
+
